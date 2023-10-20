@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100%;
+
+}
+
+header {
+    padding: 1vh;
+    text-align: center;
+}
+
+header img {
+    width: 250px;
+}
+
+li {
+    padding-inline: 15px;
+}
+
+.logo {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.navbox {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+}
+
+.navbox ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbox ul li {
+    list-style: none;
+    border-radius: 3px;
+}
+
+.navbox ul li a{
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+.search-box {
+    position: relative;
+    background-color:whitesmoke;
+    padding: 6px;
+    border-radius:10px;
+    border: 1px solid black;
+}
+
+.search-btn {
+    float: right;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    background-color: black;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 1s;
+    width: 130px;
+}
+
+
+.container {
+    padding: 1vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        margin: 0rem 13rem 0rem 13rem;
+    }
+    
+}
+
+.title {
+    transition: 1s;
+    color: black;
+    padding: 1.5vh;
+    background-color: #b4bbb5fc;
+    width: 100%;
+    border-radius: 3px;
+
+}
+
+
+.infobox {
+    padding: 3vh;
+    color: rgb(39, 34, 34);
+    background-color: whitesmoke;
+    border-radius: 5px;
+    backdrop-filter: blur(1.5px);
+
+}
+
+#word{
+    color: #4CAF50;
+}
+
+.box {
+    width: 100%;
+    color: white;
+    background-color: #263238f1;
+    border-radius: 5px;
+}
+
+.box1 {
+    display: none;
+    background-color: #26323809;
+    color: inherit;
+    border-radius: 5px;
+}
+
+.box1 h2{
+    text-align: center;
+
+}
+
+.box, .box1 {
+    padding: 3vh;
+}
+
+#esconder {
+    display: none;
+}
+
+.buttons {
+    align-items: center;
+    padding: 1vh; 
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+#myAudio {
+    padding: 3vh;
+}
+
+
+.bi.bi-whatsapp,
+.bi.bi-linkedin,
+.bi.bi-github {
+    color: black;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+
+/* ESTILIZAÇÃO DO MENU DROPDOWN */
+
+.dp-menu {
+    padding-top: 25px;
+    text-align: center;
+}
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.dp-menu ul li {
+    display: inline-block;
+    position: relative;
+    margin-top: 2px;
+}
+
+.dp-menu ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    width: 115px;
+}
+
+
+.dp-menu ul li:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: 0.9s;
+
+}
+
+/* SUBMENU */
+.dp-menu ul ul{
+    left: 0;
+    display: none;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul{
+    display: block;
+}
+
+.dp-menu ul ul{
+    width: 150px;
+}
+
+.dp-menu ul ul li a{
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .dp-menu ul li {
+        padding-bottom: 200px;
+    }
+    .dp-menu ul ul li {
+        padding-bottom: 0px;
+    }
+
+    .navbox img {
+        display: none;
+    }
+    
+}
+
+/* CONTAINER-G ################################# */
+
