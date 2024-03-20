@@ -92,6 +92,42 @@ li {
 
 }
 
+/* ESTILIZAÇÃO DO ÍTEM */
+.item {
+    padding: 13px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.item p{
+    padding: 8px;
+}
+
+.item ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.item ul li {
+    list-style: none;
+    border-radius: 3px;
+}
+
+.item ul li a{
+    padding: 3px;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.item img{
+    width: 250px;
+    border-radius: 5px;
+}
+
+
+
 @media screen and (min-width: 800px) {
     .container {
         margin: 0rem 13rem 0rem 13rem;
