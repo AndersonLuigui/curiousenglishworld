@@ -256,6 +256,12 @@ button:hover {
 
 }
 
+/* UL RESPOSTA */
+.resposta li {
+    display: block;
+    margin-bottom: 10px; /* Espaço entre cada input */
+}
+
 /* SUBMENU */
 .dp-menu ul ul{
     left: 0;

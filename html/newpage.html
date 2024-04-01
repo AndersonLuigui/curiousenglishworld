@@ -35,6 +35,31 @@
             <audio id="myAudio" controls>
                 <source src="/audio/pink.mp3" type="audio/mpeg" >
             </audio>
+
+            <form action="/submit-responses" method="post">
+                <ul class="resposta">
+                    <li>
+                        <label>
+                            <input type="radio" name="resposta" value="resposta1">
+                            Resposta 1
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="resposta" value="resposta2">
+                            Resposta 2
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="resposta" value="resposta3">
+                            Resposta 3
+                        </label>
+                    </li>
+                </ul>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
 
         
