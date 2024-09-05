@@ -26,33 +26,73 @@
             <h2>Back to the moon</h2>
         </div>
 
-<!--         <div class="imagem">
-            <img src="/img/textoneimg.png" alt="passarocolorido">
-        </div> -->
-
         <div class="box">
             <p>
-                Several space agencies, including NASA, ESA (European Space Agency), Roscosmos (Russian Space Agency), and CNSA (China National Space Administration), have plans to return to the Moon. These ambitious projects aim to establish a sustainable human presence on the lunar surface and expand our understanding of our nearest cosmic neighbor. NASA, through the Artemis program, intends to send astronauts back to the Moon, including the first woman to walk on lunar soil, with the goal of developing a lunar base as a platform for future Mars missions. Additionally, other agencies are also planning robotic and crewed missions to explore the Moon and harness its resources, paving the way for a new era of space exploration and international cooperation in the race back to the Moon.
+                Several space agencies, including NASA, ESA (European Space Agency), Roscosmos (Russian Space Agency), 
+                and CNSA (China National Space Administration), have plans to return to the Moon. 
+                <br><br>
+                These ambitious 
+                projects aim to establish a sustainable human presence on the lunar surface and expand our 
+                understanding of our nearest cosmic neighbor. NASA, through the Artemis program, intends to 
+                send astronauts back to the Moon, including the first woman to walk on lunar soil, with the 
+                goal of developing a lunar base as a platform for future Mars missions. 
+                <br><br>
+                Additionally, other 
+                agencies are also planning robotic and crewed missions to explore the Moon and harness its 
+                resources, paving the way for a new era of space exploration and international cooperation 
+                in the race back to the Moon.
             </p>
         </div>
 
-        <audio id="myAudio" controls>
-            <source src="/audio/moon.mp3" type="audio/mpeg" >
-        </audio>
-
-        <div class="buttons">
-            <button type="button" id="traduzir">Traduzir</button>
-            <button type="button" id="esconder">Esconder</button>
+        <!-- CONTÊINER DE CONTROLE - AUDIO E BOTÃO SEARCH E TRADUTOR -->
+        <div class="topRow">
+            <div class="myaudio">
+                <div class="audio-controls">
+                    <button id="playButton" class="play-pause">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <div class="progress-container">
+                        <div id="progressBar" class="progress-bar"></div>
+                    </div>
+                    <span id="currentTime" class="time">00:00</span>
+                </div>
+                <audio id="myAudio">
+                    <source src="/audio/moon.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        
+            <div class="searchWord">
+                <input type="text" id="wordInput" placeholder="Dígite sua palavra para Pesquisar">
+                <button id="searchWordButton">Pesquisar</button>
+            </div>
+        
+            <div class="buttons">
+                <button type="button" id="traduzir">Traduzir</button>
+                <button type="button" id="esconder">Esconder</button>
+            </div>
         </div>
 
 
 
 
         <div class="box1">
-            <h2>De volta à Lua</h2>
+            <div class="titulo2">
+                <h2>De volta à Lua</h2>
+            </div>
             <p>
-                Várias agências espaciais, incluindo a NASA, a ESA (Agência Espacial Europeia), a Roscosmos (Agência Espacial Russa) e a CNSA (Administração Espacial Nacional da China), têm planos para retornar à Lua. Esses projetos ambiciosos visam estabelecer uma presença humana sustentável na superfície lunar e expandir nossa compreensão sobre nosso vizinho cósmico mais próximo. A NASA, por meio do programa Artemis, pretende enviar astronautas novamente à Lua, desta vez com a primeira mulher a caminhar em solo lunar e o objetivo de desenvolver uma base lunar como plataforma para futuras missões a Marte. Além disso, outras agências também estão planejando missões robóticas e tripuladas para explorar a Lua e aproveitar seus recursos, abrindo caminho para uma nova era de exploração espacial e cooperação internacional na corrida de volta à Lua.
-
+                Várias agências espaciais, incluindo a NASA, a ESA (Agência Espacial Europeia), 
+                a Roscosmos (Agência Espacial Russa) e a CNSA (Administração Espacial Nacional da China), 
+                têm planos para retornar à Lua. 
+                <br><br> 
+                Esses projetos ambiciosos visam estabelecer uma presença humana 
+                sustentável na superfície lunar e expandir nossa compreensão sobre nosso vizinho cósmico mais próximo. 
+                A NASA, por meio do programa Artemis, pretende enviar astronautas novamente à Lua, desta vez com a 
+                primeira mulher a caminhar em solo lunar e o objetivo de desenvolver uma base lunar como plataforma 
+                para futuras missões a Marte.
+                <br><br>
+                Além disso, outras agências também estão planejando missões robóticas 
+                e tripuladas para explorar a Lua e aproveitar seus recursos, abrindo caminho para uma nova era de 
+                exploração espacial e cooperação internacional na corrida de volta à Lua.
             </p>
         </div>
 

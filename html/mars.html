@@ -26,10 +26,6 @@
             <h2>The Exploration of Mars</h2>
         </div>
 
-<!--         <div class="imagem">
-            <img src="/img/textoneimg.png" alt="passarocolorido">
-        </div> -->
-
         <div class="box">
             <p>
                 The exploration of Mars has been one of humanity's 
@@ -59,21 +55,42 @@
             </p>
         </div>
 
-        <audio id="myAudio" controls>
-            <source src="/audio/mars.mp3" type="audio/mpeg" >               
-        </audio>
-
-        <div class="buttons">
-            <button type="button" id="traduzir">Traduzir</button>
-            <button type="button" id="esconder">Esconder</button>
+        <!-- CONTÊINER DE CONTROLE - AUDIO E BOTÃO SEARCH E TRADUTOR -->
+        <div class="topRow">
+            <div class="myaudio">
+                <div class="audio-controls">
+                    <button id="playButton" class="play-pause">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <div class="progress-container">
+                        <div id="progressBar" class="progress-bar"></div>
+                    </div>
+                    <span id="currentTime" class="time">00:00</span>
+                </div>
+                <audio id="myAudio">
+                    <source src="/audio/mars.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        
+            <div class="searchWord">
+                <input type="text" id="wordInput" placeholder="Dígite sua palavra para Pesquisar">
+                <button id="searchWordButton">Pesquisar</button>
+            </div>
+        
+            <div class="buttons">
+                <button type="button" id="traduzir">Traduzir</button>
+                <button type="button" id="esconder">Esconder</button>
+            </div>
         </div>
 
 
 
 
         <div class="box1">
+            <div class="titulo2">
+                <h2>A Exploração de Marte</h2>
+            </div>
             <p>
-               <h2>A Exploração de Marte</h2>
                <br>
                 A exploração de Marte tem sido uma das empreitadas mais emocionantes 
                 da humanidade. Ao longo dos anos, várias missões espaciais foram enviadas para estudar 
@@ -95,7 +112,6 @@
                 e entusiastas do espaço a continuarem avançando em direção a novos horizontes. À medida que a 
                 tecnologia avança, novas missões estão sendo planejadas e lançadas, prometendo revelar ainda mais 
                 segredos desse intrigante vizinho cósmico.
-
             </p>
         </div>
 

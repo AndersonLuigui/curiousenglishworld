@@ -26,9 +26,6 @@
             <h2>Coffee and Brazil</h2>
         </div>
 
-<!--         <div class="imagem">
-            <img src="/img/textoneimg.png" alt="passarocolorido">
-        </div> -->
 
         <div class="box">
             <p>
@@ -41,20 +38,41 @@
             </p>
         </div>
 
-        <audio id="myAudio" controls>
-            <source src="/audio/coffee.mp3" type="audio/mpeg" >
-        </audio>
-
-        <div class="buttons">
-            <button type="button" id="traduzir">Traduzir</button>
-            <button type="button" id="esconder">Esconder</button>
+        <!-- CONTÊINER DE CONTROLE - AUDIO E BOTÃO SEARCH E TRADUTOR -->
+        <div class="topRow">
+            <div class="myaudio">
+                <div class="audio-controls">
+                    <button id="playButton" class="play-pause">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <div class="progress-container">
+                        <div id="progressBar" class="progress-bar"></div>
+                    </div>
+                    <span id="currentTime" class="time">00:00</span>
+                </div>
+                <audio id="myAudio">
+                    <source src="/audio/coffee.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        
+            <div class="searchWord">
+                <input type="text" id="wordInput" placeholder="Dígite sua palavra para Pesquisar">
+                <button id="searchWordButton">Pesquisar</button>
+            </div>
+        
+            <div class="buttons">
+                <button type="button" id="traduzir">Traduzir</button>
+                <button type="button" id="esconder">Esconder</button>
+            </div>
         </div>
 
 
 
 
         <div class="box1">
-            <h2>O Cafe e o Brasil</h2>
+            <div class="titulo2">
+                <h2>O Cafe e o Brasil</h2>
+            </div>
             <br>
             <p>
                 O Brasil é considerado o país onde se mais consome café por uma combinação de fatores históricos, culturais e econômicos. A história da cafeicultura no Brasil remonta ao século XVIII, quando as primeiras mudas de café foram trazidas para o país, e desde então, o café tornou-se uma importante commodity de exportação.

@@ -26,10 +26,6 @@
             <h2>The impact of artificial intelligence (AI)</h2>
         </div>
 
-<!--         <div class="imagem">
-            <img src="/img/textoneimg.png" alt="passarocolorido">
-        </div> -->
-
         <div class="box">
             <p>
                 The impact of artificial intelligence (AI) 
@@ -89,19 +85,41 @@
             </p>
         </div>
 
-        <audio id="myAudio" controls>
-            <source src="/audio/ia.mp3" type="audio/mpeg" >               
-        </audio>
-
-        <div class="buttons">
-            <button type="button" id="traduzir">Traduzir</button>
-            <button type="button" id="esconder">Esconder</button>
+        <!-- CONTÊINER DE CONTROLE - AUDIO E BOTÃO SEARCH E TRADUTOR -->
+        <div class="topRow">
+            <div class="myaudio">
+                <div class="audio-controls">
+                    <button id="playButton" class="play-pause">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <div class="progress-container">
+                        <div id="progressBar" class="progress-bar"></div>
+                    </div>
+                    <span id="currentTime" class="time">00:00</span>
+                </div>
+                <audio id="myAudio">
+                    <source src="/audio/ia.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        
+            <div class="searchWord">
+                <input type="text" id="wordInput" placeholder="Dígite sua palavra para Pesquisar">
+                <button id="searchWordButton">Pesquisar</button>
+            </div>
+        
+            <div class="buttons">
+                <button type="button" id="traduzir">Traduzir</button>
+                <button type="button" id="esconder">Esconder</button>
+            </div>
         </div>
 
 
 
 
         <div class="box1">
+            <div class="titulo2">
+                <h2>O impacto da inteligência artificial (IA)</h2>
+            </div>
             <p>
                 A inteligência artificial (IA) está causando 
                 um impacto significativo em várias esferas da 

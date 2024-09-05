@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/185a0521924/bf94444enc/de9b28028ea318d6_complete.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/stylepage.css">
     <title>O Reino das Formigas-Cogumelo</title>
 </head>
@@ -17,7 +16,6 @@
             <li><a href="/html/categorias.html">Category</a></li>
             <li><a href="/html/sobre.html">Info</a></li>
             <li><a href="/html/contato.html">Contact</a></li>
-            
         </ul>
     </div>
 
@@ -26,7 +24,7 @@
             <h2>The Kingdom of Mushroom Ants</h2>
         </div>
 
-<!--         <div class="imagem">
+        <!-- <div class="imagem">
             <img src="/img/textoneimg.png" alt="passarocolorido">
         </div> -->
 
@@ -43,20 +41,40 @@
             </p>
         </div>
 
-        <audio id="myAudio" controls>
-            <source src="/audio/ant.mp3" type="audio/mpeg" >
-        </audio>
-
-        <div class="buttons">
-            <button type="button" id="traduzir">Traduzir</button>
-            <button type="button" id="esconder">Esconder</button>
+        <!-- CONTÊINER DE CONTROLE - AUDIO E BOTÃO SEARCH E TRADUTOR -->
+        <div class="topRow">
+            <div class="myaudio">
+                <div class="audio-controls">
+                    <button id="playButton" class="play-pause">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <div class="progress-container">
+                        <div id="progressBar" class="progress-bar"></div>
+                    </div>
+                    <span id="currentTime" class="time">00:00</span>
+                </div>
+                <audio id="myAudio">
+                    <source src="/audio/ant.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        
+            <div class="searchWord">
+                <input type="text" id="wordInput" placeholder="Dígite sua palavra para Pesquisar">
+                <button id="searchWordButton">Pesquisar</button>
+            </div>
+        
+            <div class="buttons">
+                <button type="button" id="traduzir">Traduzir</button>
+                <button type="button" id="esconder">Esconder</button>
+            </div>
         </div>
-
-
-
+        
+        <!-- Fim do contêiner -->
 
         <div class="box1">
-            <h2>O Reino das Formigas-Cogumelo</h2>
+            <div class="titulo2">
+                <h2>O Reino das Formigas-Cogumelo</h2>
+            </div>
             <p>
                 No coração da Floresta Amazônica, existe um reino fascinante: 
                 o Reino das Formigas-Cogumelo. Essas pequenas criaturas cortam 
@@ -65,7 +83,6 @@
                 uma agricultura em miniatura, essas formigas 
                 surpreendem biólogos de todo o mundo, revelando os 
                 mistérios e maravilhas da natureza em seu estado mais puro.
-
             </p>
         </div>
 

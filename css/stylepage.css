@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,7 +6,6 @@
 
 body {
     height: 100%;
-
 }
 
 header {
@@ -38,7 +37,6 @@ li {
     align-items: center;
     display: flex;
     justify-content: space-between;
-
 }
 
 .navbox ul li {
@@ -46,193 +44,179 @@ li {
     border-radius: 3px;
 }
 
-.navbox ul li a{
+.navbox ul li a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
 
-
-.search-box {
-    position: relative;
-    background-color:whitesmoke;
-    padding: 6px;
-    border-radius:10px;
-    border: 1px solid black;
-}
-
-.search-btn {
-    float: right;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    background-color: black;
-}
-
-.search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: black;
-    font-size: 16px;
-    transition: 1s;
-    width: 130px;
-}
-
-
+/* Container principal */
 .container {
     padding: 1vh;
-    height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+/* Container adicional dos elementos audio traduzir e pesquisar */
+.topRow {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-/* ESTILIZAÇÃO DO ÍTEM */
-.item {
-    padding: 13px;
-    text-align: center;
-    background-color: whitesmoke;
-}
-
-.item p{
-    padding: 8px;
-}
-
-.item ul {
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.item ul li {
-    list-style: none;
-    border-radius: 3px;
-}
-
-.item ul li a{
-    padding: 3px;
-    text-decoration: none;
-    color: inherit; 
-}
-
-.item img{
-    width: 250px;
-    border-radius: 5px;
-}
-
-
-
-@media screen and (min-width: 800px) {
-    .container {
-        margin: 0rem 13rem 0rem 13rem;
-    }
-    
-}
-
-.title {
-    transition: 1s;
-    color: black;
-    padding: 1.5vh;
-    background-color: #b4bbb5fc;
+    gap: 20px; 
     width: 100%;
-    border-radius: 3px;
-
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha em telas menores */
 }
 
+/* Estilização do áudio NECESSÁRIO ESTILIZAR DE ACORDO COM O LAYOUT DO SITE */
+.myaudio {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-.infobox {
-    padding: 3vh;
-    color: rgb(39, 34, 34);
-    background-color: whitesmoke;
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.play-pause {
+    width: 70px;
+    height: 38px;
+    display: flex; /* Alinhamento com Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    font-size: medium;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.play-pause i {
+    font-size: 21px; /* Tamanho do ícone */
+    line-height: 1; /* Remove o espaçamento extra */
+}
+
+.play-pause:hover {
+    background-color: #0056b3;
+}
+
+.progress-container {
+    flex: 1;
+    background-color: #ddd;
     border-radius: 5px;
-    backdrop-filter: blur(1.5px);
-
+    height: 8px;
+    cursor: pointer;
+    position: relative;
 }
 
-#word{
-    color: #4CAF50;
+.progress-bar {
+    background-color: #28a745;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    transition: width 0.1s;
 }
 
+.time {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Estilização da caixa de busca NECESSÁRIO ESTILIZAR DE ACORDO COM O LAYOUT DO SITE */
+.searchWord {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchWord input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.searchWord button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilização dos botões */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+
+/* Outras estilizações */
 .box {
     width: 100%;
     color: white;
     background-color: #263238f1;
     border-radius: 5px;
+    padding: 3vh;
 }
 
 .box1 {
+    width: 100%;
     display: none;
     background-color: #26323809;
     color: inherit;
     border-radius: 5px;
-}
-
-.box1 h2{
-    text-align: center;
-
-}
-
-.box, .box1 {
     padding: 3vh;
+}
+
+.box1 .titulo2 {
+    text-align: center;
+}
+
+.titulo2 {
+    padding-bottom: 5px;
 }
 
 #esconder {
     display: none;
 }
 
-.buttons {
-    align-items: center;
-    padding: 1vh; 
-}
-
-button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    
-
-}
-
+/* Botão com hover */
 button:hover {
     background-color: #45a049;
 }
 
-
-
-#myAudio {
-    padding: 3vh;
-}
-
-
-.bi.bi-whatsapp,
-.bi.bi-linkedin,
-.bi.bi-github {
-    color: black;
-    font-size: 30px;
-    text-shadow: none;
-}
-
-
-/* ESTILIZAÇÃO DO MENU DROPDOWN */
-
+/* Estilização do menu dropdown */
 .dp-menu {
     padding-top: 25px;
     text-align: center;
 }
+
 .dp-menu ul {
     list-style-type: none;
     padding: 0;
 }
-
 
 .dp-menu ul li {
     display: inline-block;
@@ -248,43 +232,43 @@ button:hover {
     width: 115px;
 }
 
-
 .dp-menu ul li:hover {
     background-color: #4CAF50;
     border-radius: 5px;
     transition: 0.9s;
-
 }
 
-/* UL RESPOSTA */
+/* Resposta UL */
 .resposta li {
     display: block;
     margin-bottom: 10px; /* Espaço entre cada input */
 }
 
-/* SUBMENU */
-.dp-menu ul ul{
+/* Submenu */
+.dp-menu ul ul {
     left: 0;
     display: none;
     position: absolute;
 }
 
-.dp-menu ul li:hover ul{
+.dp-menu ul li:hover ul {
     display: block;
 }
 
-.dp-menu ul ul{
+.dp-menu ul ul {
     width: 150px;
 }
 
-.dp-menu ul ul li a{
+.dp-menu ul ul li a {
     display: inline-block;
 }
 
+/* Estilização para dispositivos móveis */
 @media screen and (max-width: 768px) {
     .dp-menu ul li {
         padding-bottom: 200px;
     }
+    
     .dp-menu ul ul li {
         padding-bottom: 0px;
     }
@@ -292,8 +276,46 @@ button:hover {
     .navbox img {
         display: none;
     }
-    
+
+    /* Ajustes para .topRow em telas pequenas */
+    .topRow {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-/* CONTAINER-G ################################# */
+/* Estilização adicional para container */
+@media screen and (min-width: 800px) {
+    .container {
+        margin: 0rem 13rem 0rem 13rem;
+    }
+}
 
+/* Estilização do título */
+.title {
+    transition: 1s;
+    color: black;
+    padding: 1.5vh;
+    background-color: #b4bbb5fc;
+    width: 100%;
+    border-radius: 3px;
+}
+
+/* Estilização da infobox */
+.infobox {
+    padding: 3vh;
+    color: rgb(39, 34, 34);
+    background-color: whitesmoke;
+    border-radius: 5px;
+    backdrop-filter: blur(1.5px);
+}
+
+#word {
+    color: #4CAF50;
+}
+
+/* Estilização de imagens dentro de item */
+.item img {
+    width: 250px;
+    border-radius: 5px;
+}
