@@ -311,6 +311,7 @@ button:hover {
     transition: 1s;
     color: black;
     padding: 1.5vh;
+    padding-inline: 3vh;
     background-color: #b4bbb5fc;
     width: 100%;
     border-radius: 3px;
