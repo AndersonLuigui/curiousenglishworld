@@ -51,6 +51,7 @@ li {
 
 /* Container principal */
 .container {
+    margin: 10px 20px;
     padding: 1vh;
     display: flex;
     flex-direction: column;
@@ -69,7 +70,7 @@ li {
     flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha em telas menores */
 }
 
-/* Estilização do áudio NECESSÁRIO ESTILIZAR DE ACORDO COM O LAYOUT DO SITE */
+
 .myaudio {
     width: 35%;
     display: flex;
@@ -89,9 +90,9 @@ li {
 .play-pause {
     width: 70px;
     height: 38px;
-    display: flex; /* Alinhamento com Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
     padding: 10px 20px;
     background-color: #007BFF;
     font-size: medium;
@@ -133,7 +134,7 @@ li {
 }
 
 
-/* Estilização da caixa de busca NECESSÁRIO ESTILIZAR DE ACORDO COM O LAYOUT DO SITE */
+/* Estilização da caixa de busca */
 .searchWord {
     display: flex;
     align-items: center;
@@ -265,6 +266,11 @@ button:hover {
 
 /* Estilização para dispositivos móveis */
 @media screen and (max-width: 768px) {
+
+    .container{
+        margin: 10px 30px;
+    }
+
     .dp-menu ul li {
         padding-bottom: 200px;
     }
@@ -282,12 +288,21 @@ button:hover {
         flex-direction: column;
         align-items: center;
     }
+
+    .audio-controls {
+        width: 325px;
+    }
+
 }
 
 /* Estilização adicional para container */
 @media screen and (min-width: 800px) {
     .container {
         margin: 0rem 13rem 0rem 13rem;
+    }
+
+    .audio-controls {
+        width: 325px;
     }
 }
 
